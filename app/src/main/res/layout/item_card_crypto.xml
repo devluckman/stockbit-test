@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small">
+
+
+    <TextView
+        android:id="@+id/tv_name_crypto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graviola_soft_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ETH" />
+
+    <TextView
+        android:id="@+id/tv_full_name_crypto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:fontFamily="@font/graviola_soft_regular"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/font_size_small"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_crypto"
+        tools:text="Ethereum" />
+
+
+    <TextView
+        android:id="@+id/tv_price_crypto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/graviola_soft_regular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2,791.26" />
+
+    <TextView
+        android:id="@+id/tv_percent_crypto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:fontFamily="@font/graviola_soft_regular"
+        android:textColor="@color/green"
+        android:textSize="@dimen/font_size_small"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_crypto"
+        tools:text="-2.26 (-0.08)" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/padding_small"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_full_name_crypto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">StockbitApp</string>
+
+    <!-- PAGE LOGIN -->
+    <string name="login_label_masuk">Masuk</string>
+    <string name="login_label_btn_google">Masuk Dengan Google</string>
+    <string name="login_label_btn_facebook">Masuk dengan Facebook</string>
+    <string name="login_label_atau">Atau</string>
+    <string name="login_label_edt_username">Username or Email</string>
+    <string name="login_label_edt_password">Password</string>
+    <string name="login_label_text_forgot_password">Lupa Password</string>
+    <string name="login_label_btn_login">Login</string>
+    <string name="login_label_btn_open_with_fingerprint">Masuk Dengan Fingerprint</string>
+    <string name="login_label_text_dont_have_account">Belum punya akun?</string>
+    <string name="login_label_text_register_now">Daftar Sekarang</string>
+
+
+    <!-- TITLE MENU NAVIGATION-->
+    <string name="title_watchlist">Watchlist</string>
+    <string name="title_stream">Stream</string>
+    <string name="title_search">Search</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_portfolio">Portfolio</string>
+
+
+    <!-- TITLE PAGE NAVIGATION-->
+    <string name="title_page_stream">Page Stream</string>
+    <string name="title_page_search">Page Search</string>
+    <string name="title_page_chat">Page Chat</string>
+    <string name="title_page_portfolio">Page Portfolio</string>
+    <string name="watchlist_btn_retry">Retry</string>
+
+</resources>

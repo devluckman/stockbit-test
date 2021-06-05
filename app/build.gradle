@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.man.stockbittest"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    flavorDimensions "api"
+    productFlavors {
+        development {
+            dimension "api"
+            applicationIdSuffix '.dev'
+            buildConfigField("String", "BASE_URL", "\"https://min-api.cryptocompare.com/\"")
+            manifestPlaceholders = [ appName:"Stockbit Dev"]
+        }
+        staging {
+            dimension "api"
+            applicationIdSuffix '.staging'
+            buildConfigField("String", "BASE_URL", "\"https://min-api.cryptocompare.com/\"")
+            manifestPlaceholders = [ appName:"Stockbit Staging"]
+        }
+        production {
+            dimension "api"
+            buildConfigField("String", "BASE_URL", "\"https://min-api.cryptocompare.com/\"")
+            manifestPlaceholders = [ appName:"Stockbit"]
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation project(':core')
+    implementation project(':data')
+    implementation project(':domain')
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+}

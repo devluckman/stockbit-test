@@ -1,0 +1,5 @@
+rootProject.name = "StockbitApp"
+include ':core'
+include ':domain'
+include ':data'
+include ':app'
