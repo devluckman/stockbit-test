@@ -7,9 +7,7 @@ This application written in kotlin
 
 ### Preview App
 
-![](/images/page_splash.jpg)
-![](/images/page_login.jpg)
-![](/images/page_home.jpg)
+![](/images/app_preview.jpg)
 
 ### Architecture
 Clean Architecture + MVVM (Model-View-ViewModel)
